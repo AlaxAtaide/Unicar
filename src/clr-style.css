@@ -1,0 +1,119 @@
+body{
+    background-image: url(images/Carros-empilhados-2.png);
+    margin: 0;
+    padding: 0;
+    display: grid;
+    grid-template-areas: 
+        "header header"
+        "box box"
+        "footer footer";
+    grid-template-rows: 260px, 1fr, 20px;
+}
+header{
+    grid-area: header;
+    font-size: 30px;
+    margin: 0px;
+    padding: 0px;
+    background-color: rgb(31, 31, 31);
+    color: white;
+}
+
+.logo h2{
+    font-size: 50px;
+    padding-left: 100px;
+    color: #ffffff;
+}
+
+h2{
+    padding-left: 100px;
+}
+.menu ul {
+	padding:0px;
+	margin:0px;
+	list-style:none;
+}
+.menu ul li { 
+    display: inline;
+    justify-content: space-between;
+}
+.menu ul li a {
+	padding: 2px 115px;
+	display: inline-block;
+	background-color:#6D6D6D;
+	color: #EDEDED;
+	text-decoration: none;
+	border-bottom:3px solid #EDEDED;
+    font-size: 30px;
+}
+.menu ul li a:hover {
+	background-color:#D6D6D6;
+	color: #6D6D6D;
+	border-bottom:3px solid #6c5ec9;
+}
+main{
+    background: url("bg.jpg") no-repeat
+    center center;
+    background-size: cover;
+    height: 100%;
+    grid-area: box;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+fieldset{
+    border: none;
+    font-weight: bold;
+    color: rgb(0, 98, 255);
+    text-shadow: black 0.0em 0.1em 0.5em;
+    text-align: center;
+    font-size: 50px;
+}
+form{
+    font-size: 25px;
+    color: white;
+    text-align: left;
+    background-color: #333;
+    padding: 30px 100px;
+    border-radius: 10px;
+}
+.reserva{
+    padding: 40px 100px;
+}
+.data{
+    font-size: 23px;
+    width: auto;
+}
+.loc{
+    width: 227px;
+    font-size: 23px;
+}
+input{
+    width: 250px;
+    height: 30px;
+    border-radius: 5px;
+    font-size: 20px;
+}
+.button{
+    font-size: 20px;
+    text-align: center;
+    width: 90px;
+    height: 30px;
+}
+
+footer{
+    border-top: 1px solid #333;
+    bottom: 0;
+    left: 0;
+    height: 40px;
+    position: fixed;
+    width: 100%;
+
+}
+
+.copyright {
+	color: #ffffff;
+	font-size: 20px;
+	margin: 5px 0 30px;
+}

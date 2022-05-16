@@ -1,0 +1,150 @@
+body{
+    background-color:rgb(31, 31, 31);
+    margin: 0px;
+    padding: 0px;
+    display: grid;
+    grid-template-areas:
+        "header header"
+        "banner-1 banner-1"
+        "banner-2 banner-2"
+        "banner-3 banner-3"
+        "footer footer";
+}
+header{
+    grid-area: header;
+}
+
+@media screen and (max-width: 999px) {
+
+    header {
+        width: 100%;
+    }
+    
+}
+
+.logo h2{
+    font-size: 50px;
+    padding-left: 100px;
+    color: #ffffff;
+}
+
+.menu ul {
+	padding:0px;
+	margin:0px;
+	background-color:#ffffff;
+	list-style:none;
+}
+
+.menu ul li { 
+    display: inline;
+    justify-content: space-between;
+}
+
+.menu ul li a {
+	padding: 2px 114.5px;
+	display: inline-block;
+	background-color:#6D6D6D;
+	color: #EDEDED;
+	text-decoration: none;
+	border-bottom:3px solid #EDEDED;
+    font-size: 30px;
+}
+.menu ul li a:hover {
+	background-color:#D6D6D6;
+	color: #6D6D6D;
+	border-bottom:3px solid #6c5ec9;
+    
+}
+
+.banner-1{
+    grid-area: banner-1;
+    display: flex;
+    justify-content: space-between;
+    background-color: #ffffff;
+    text-align: center;
+}
+
+
+.banner-1 img {
+    padding-right: 185px; 
+    width:816px;
+    height:438px;
+}
+.imagem-inicial {
+    padding-right: 200px;
+    margin: 50px 100px;
+    width: 100%;
+}
+
+.banner-1 p{
+    font-weight: 500;
+    margin: 150px 50px;
+    width: 500px;
+    font-size: 60px;
+    line-height: 60px;
+    padding-left: 100px;
+    text-align: center;
+    word-spacing: 5px;
+}
+.banner-2{
+    grid-area: banner-2;
+    display: flex;
+    justify-content: space-between;
+}
+.banner-2 img {
+    padding-right: 130px; 
+    width:959px;
+    height:592px;
+}
+.banner-2 p{
+    font-weight: 500;
+    color: #ffffff;
+    margin: 150px 50px;
+    font-size: 40px;
+    line-height: 60px;
+    padding-left: 200px;
+    text-align: center;
+    word-spacing: 5px;
+    
+}
+
+.banner-3{
+    grid-area: banner-3;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    background-color: #ffffff;
+}
+
+.sobre-nos{
+    font-weight: 500;
+    text-transform: uppercase;
+    font-size: 60px;
+    text-align: center;    
+    line-height: 80px;
+    padding-left: 220px;
+    margin: 80px 50px;
+    
+}
+
+.banner-3 p{
+    margin: 150px 50px;
+    font-size: 40px;
+    text-align: center;
+    padding-left: 100px;
+    padding-right: 350px;
+    word-spacing: 5px;
+}
+
+footer{
+    grid-area: footer;
+    text-align: center;
+    margin-top: 0px;
+    padding: 30px 0;
+}
+
+.copyright {
+	color: #ffffff;
+	font-size: 20px;
+	margin: 5px 0;
+}
