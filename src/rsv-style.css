@@ -12,6 +12,7 @@ body{
 }
 header{
     grid-area: header;
+
 }
 
 .logo h2{
@@ -22,9 +23,12 @@ header{
 
 .menu ul {
 	padding:0px;
+    width: 100%;
 	margin:0px;
 	background-color:#ffffff;
 	list-style:none;
+    display: block;
+
 }
 
 .menu ul li { 
@@ -33,7 +37,7 @@ header{
 }
 
 .menu ul li a {
-	padding: 2px 133.6px;
+	padding: 2px 114px;
 	display: inline-block;
 	background-color:#6D6D6D;
 	color: #EDEDED;
@@ -48,16 +52,7 @@ header{
     
 }
 
-@media screen and (max-width: 999px) {
 
-    header {
-        width: 100%;
-    }
-    
-}
-
-
-  
 .banner-1{
     grid-area: banner-1;
     display: flex;
@@ -66,10 +61,21 @@ header{
     text-align: center;
 }
 
+@media screen and (max-width: 768px) {
+
+    .container {
+        width: 100%;
+        max-width: 980px;
+    }
+    banner-1 {
+        text-align: center;
+    }
+}
 
 .banner-1 img {
     padding-right: 250px; 
-    width:788px;
+    width: 100%;
+    max-width:788px;
     height:454px;
 }
 .imagem-inicial {

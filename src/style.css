@@ -2,7 +2,6 @@ body{
     background-color:rgb(31, 31, 31);
     margin: 0px;
     padding: 0px;
-    display: grid;
     grid-template-areas:
         "header header"
         "banner-1 banner-1"
@@ -12,14 +11,6 @@ body{
 }
 header{
     grid-area: header;
-}
-
-@media screen and (max-width: 999px) {
-
-    header {
-        width: 100%;
-    }
-    
 }
 
 .logo h2{
@@ -41,7 +32,7 @@ header{
 }
 
 .menu ul li a {
-	padding: 2px 114.5px;
+	padding: 2px 114px;
 	display: inline-block;
 	background-color:#6D6D6D;
 	color: #EDEDED;
