@@ -133,11 +133,24 @@ header{
     border-radius: 10px;
 }
 
-.loc{
-    width: 500px;
+/*.loc{
+    width: 50%;
+    margin: 100px 50px 200px;
     border-radius: 10px;
     font-size: 50px;
 }
+*/
+
+#local {
+    width: 100%;
+    font-size: 50px;
+    height: 90px;
+    border-radius: 5%;
+    max-width: 500px;
+
+}
+
+
 input{
     width: 350px;
     height: 100px;
