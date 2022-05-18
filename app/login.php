@@ -1,7 +1,7 @@
 <?php 
 
-require_once ("valida-login.php");
-require_once("usuario-logado.php");
+require_once '../app/valida-login.php';
+require_once '../app/login.php';
 
 $cliente = buscaCliente($conexao, $_POST["email"], $_POST["senha"]);
 
