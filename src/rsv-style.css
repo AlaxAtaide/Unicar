@@ -133,13 +133,18 @@ header{
     border-radius: 10px;
 }
 
+/*
 .loc{
     width: 50%;
     margin: 100px 50px 200px;
     border-radius: 10px;
     font-size: 50px;
 }
+<<<<<<< HEAD
 
+=======
+*/
+>>>>>>> main
 
 #local {
     width: 100%;
@@ -150,7 +155,10 @@ header{
 
 }
 
+<<<<<<< HEAD
 
+=======
+>>>>>>> main
 input{
     width: 350px;
     height: 100px;
