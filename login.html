@@ -24,6 +24,11 @@
   <body>
     <header>
       <h2 class="logo">UniCar</h2>
+
+      <div class="menu-icon" onclick="abrirMenu()">
+        <img src="src/images/hamburguer.png"> 
+      </div>
+
       <div class="menu">
         <nav>
             <ul>
@@ -34,6 +39,15 @@
                 <li><a href="login.html">Login</a></li>
             </ul>
         </nav>
+        <script>
+          var menu = document.querySelector('.menu ul');
+          var menuIcon = document.querySelector('.menu-icon');
+
+          function abrirMenu(){
+            menu.classList.toggle('open');
+          }
+        </script>
+
     </div>
     </header>
     <main>
