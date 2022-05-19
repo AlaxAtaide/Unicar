@@ -60,7 +60,7 @@ h2{
     filter: invert(1);
 
 }
-@media (max-width: 770px) {
+@media (max-width: 940px) {
 
     .menu-icon {
         display: block;
