@@ -17,6 +17,8 @@ body{
     width: 100%;
   
 }
+
+
     
 /* bolhas */
 
@@ -33,6 +35,7 @@ body{
     animation: burble 3s linear infinite;
 
 }
+
 
 .burble:nth-child(1) {
     width: 80px;
