@@ -133,13 +133,14 @@ header{
     border-radius: 10px;
 }
 
-/*
+
 .loc{
-    width: 500px;
+    width: 50%;
+    margin: 100px 50px 200px;
     border-radius: 10px;
     font-size: 50px;
 }
-*/
+
 
 #local {
     width: 100%;
@@ -150,12 +151,15 @@ header{
 
 }
 
+
+
 input{
     width: 350px;
     height: 100px;
     border-radius: 5px;
     font-size: 20px;
-}   
+}  
+
     .button {
       appearance: none;
       background-color: #FFFFFF;
