@@ -1,13 +1,18 @@
 <?php
-    $host = "localhost";
-    $user = "root";
-    $password = "";
-    $dBase = "Unicar";
 
-    $conexao = mysqli_connect($host, $user, $password, $dBase);
+ abstract class Conexao {
+    private $servDB= 'mysql:host=localhost;dbname=unicar';
+    private $user = 'root';
+    private $pass = '';
 
-    if(!$conexao ){
-       echo "Banco de Dados não conectado!";
-       die();
+    protected function connect() {
+        try {
+            $conn = new PDO($this->servDB, $this->user, $this->pass);
+            $conn->exec("set names utf8");
+            return $conn;
+
+        } catch(PDOException $error) {
+            echo $error->getMessage();
+        }
     }
-   
+}
