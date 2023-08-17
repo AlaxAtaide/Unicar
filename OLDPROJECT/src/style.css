@@ -1,0 +1,233 @@
+/* Reset and global styles */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Smooch Sans', sans-serif;
+  background-color: #1f1f1f;
+  color: #ffffff;
+}
+
+
+
+
+
+/* NAVBAR - MENU DE OPÇÕES HORIZONTAL - início ⇩ */
+nav {
+    background-color: #151515;
+    padding: 15px;
+    height: 7vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #9ca3af;
+    position: fixed; 
+    top: 0; 
+    width: 100%;
+    z-index: 999; 
+  }
+  
+  
+  .container {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      width: 100%;
+      max-width: 800px;
+      margin: 0 auto;
+  }
+  
+  .logo {
+      font-weight: bold;
+      font-size: 22px;
+      color: #9ca3af;
+      padding-right: 10vw;
+  }
+  
+  .menu {
+      list-style-type: none;
+      display: flex;
+      font-size: 16px;
+      justify-content: flex-start;
+      align-items: center;
+  }
+  
+  .menu li {
+      margin-left: 20px;
+  }
+  
+  .menu li:first-child {
+      margin-left: 0;
+  }
+  
+  .menu a {
+      text-decoration: none;
+      color: inherit;
+      padding: 5px 10px;
+  }
+  
+  .menu a:hover {
+      background-color: #333;
+      color: #fff;
+  }
+  
+  .menu-icon {
+      display: none;
+      cursor: pointer;
+      color: #9ca3af;
+  }
+
+
+
+/* Banner styles */
+.banner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 100px 50px;
+  background-color: #ffffff;
+}
+
+.banner p {
+  font-weight: 500;
+  font-size: 1.5rem;
+  text-align: center;
+  line-height: 1.5;
+}
+
+.banner img {
+  max-width: 100%;
+  height: auto;
+}
+
+.sobre-nos {
+  font-weight: 500;
+  text-transform: uppercase;
+  font-size: 2rem;
+  text-align: center;
+  line-height: 1.5;
+}
+
+/* Footer styles */
+footer {
+  text-align: center;
+  padding: 20px 0;
+}
+
+/* Media queries for responsiveness */
+@media screen and (max-width: 768px) {
+
+    
+
+         /* HAMBURGE ICON - início */
+
+.burger {
+    position: relative;
+    width: 30px;
+    height: 25px;
+    background: transparent;
+    cursor: pointer;
+    display: block;
+  }
+  
+  .burger input {
+    display: none;
+  }
+  
+  .burger span {
+    display: block;
+    position: absolute;
+    height: 4px;
+    width: 100%;
+    background: rgb(0, 89, 255);
+    border-radius: 9px;
+    opacity: 1;
+    left: 0;
+    transform: rotate(0deg);
+    transition: .25s ease-in-out;
+  }
+  
+  .burger span:nth-of-type(1) {
+    top: 0px;
+    transform-origin: left center;
+  }
+  
+  .burger span:nth-of-type(2) {
+    top: 50%;
+    transform: translateY(-50%);
+    transform-origin: left center;
+  }
+  
+  .burger span:nth-of-type(3) {
+    top: 100%;
+    transform-origin: left center;
+    transform: translateY(-100%);
+  }
+  
+  .burger.active span:nth-of-type(1) {
+    transform: rotate(45deg);
+    top: 0px;
+    left: 3px;
+  }
+  
+  .burger.active span:nth-of-type(2) {
+    width: 0%;
+    opacity: 0;
+  }
+  
+  .burger.active span:nth-of-type(3) {
+    transform: rotate(-45deg);
+    top: 22px;
+    left: 3px;
+  }
+      
+      /* HAMBURGE ICON - fim */
+
+
+  /* SIDEBAR (MENU LATERAL) - inicio ⇩ */
+      
+
+    /* SIDEBAR (MENU LATERAL) - inicio ⇩ */
+      
+
+    .menu {
+        flex-direction: column;
+        align-items: center; 
+       
+    }
+
+    .menu li {
+        margin: 20px 0; /* Espaçamento entre os itens */
+    }
+    
+    .menu a {
+        font-size: 20px;
+    }
+  
+    .menu-container {
+      position: fixed;
+      width: 100%;
+      height: 100vh;
+      background-color: #151515;
+      top: 7vh;
+      transform: translateX(-100%);
+      transition: transform 0.5s;
+      z-index: 1;
+  }
+  
+    .menu-container.active {
+        transform: translateX(0); /* Mostra a barra lateral */
+    }
+      
+    .menu-container ul {
+        margin-top: 30%;
+    }
+  
+    .menu-container a:hover,
+    .menu-container a:active {
+      background: none;
+      color: white;
+    }
+
+     /* SIDEBAR (MENU LATERAL) - fim */
+
+}

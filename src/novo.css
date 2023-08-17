@@ -1,0 +1,785 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', Arial, sans-serif;
+    background-color: #111111;
+}
+
+a {
+  text-decoration: none;
+}
+
+.header-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+    animation: rotate-forward 3s linear infinite;
+  }
+
+  
+/* NAVBAR - MENU DE OPÇÕES HORIZONTAL - início ⇩ */
+ /* NAVBAR - MENU DE OPÇÕES HORIZONTAL - início ⇩ */
+ nav {
+    background-color: #151515;
+    padding: 15px;
+    height: 7vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #9ca3af;
+    position: fixed; 
+    top: 0; 
+    width: 100%;
+    z-index: 999; 
+  }
+  
+  
+  .container {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      width: 100%;
+      max-width: 800px;
+      margin: 0 auto;
+  }
+  
+  .logo {
+      font-weight: bold;
+      font-size: 22px;
+      color: #9ca3af;
+      padding-right: 10vw;
+  }
+  
+  .menu {
+      list-style-type: none;
+      display: flex;
+      font-size: 16px;
+      justify-content: flex-start;
+      align-items: center;
+  }
+  
+  .menu li {
+      margin-left: 20px;
+  }
+  
+  .menu li:first-child {
+      margin-left: 0;
+  }
+  
+  .menu a {
+      text-decoration: none;
+      color: inherit;
+      padding: 5px 10px;
+  }
+  
+  .menu a:hover {
+      background-color: #333;
+      color: #fff;
+  }
+  
+  .menu-icon {
+      display: none;
+      cursor: pointer;
+      color: #9ca3af;
+  }
+
+/* Banner styles */
+
+/* Banner styles */
+.banner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 150px;
+    background-color: #e7e7e7;
+    position: relative;
+}
+
+html.dark .banner-1 {
+  background-color: #0a0a0a;
+  color: #fff;
+}
+
+
+html.dark .banner-3 {
+  background-color: #0a0a0a;
+  color: #fff;
+}
+
+.banner p {
+    font-weight: 500;
+    font-size: 2.5rem;
+    text-align: center;
+    margin: 0; /* Remove any default margins */
+}
+
+.banner-2 {
+    background-color: #151515;
+    color: #fff;
+}
+
+.banner img {
+    max-width: 100%;
+    height: auto;
+}
+
+.sobre-nos {    
+    font-weight: 500;
+    text-transform: uppercase;
+    font-size: 2rem;
+    text-align: center;
+    line-height: 1.5;
+    margin-bottom: 20px; /* Add some spacing */
+}
+
+ .banner-3 p {   
+  font-size: 1.8rem; 
+  width: clamp(1050px, 50%, 100px);
+ 
+}
+
+
+   /* PÁGINA DE LOGIN - início */
+  html.dark body {
+    background: rgba(0,0,0,.9);
+    color: #fff;
+  }
+ body {
+    background: #fff;
+
+  }
+     
+   .login-box {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 400px;
+    padding: 40px;
+    margin: 20px auto;
+    transform: translate(-50%, -55%);
+    background: rgba(0,0,0,.9);
+    box-sizing: border-box;
+    box-shadow: 0 15px 25px rgba(0,0,0,.6);
+    border-radius: 10px;
+    
+  }
+  
+  .login-box p:first-child {
+    margin: 0 0 30px;
+    padding: 0;
+    color: #fff;
+    text-align: center;
+    font-size: 1.5rem;
+    font-weight: bold;
+    letter-spacing: 1px;
+  }
+  
+  .login-box .user-box {
+    position: relative;
+  }
+  
+  .login-box .user-box input {
+    width: 100%;
+    padding: 10px 0;
+    font-size: 16px;
+    color: #fff;
+    margin-bottom: 30px;
+    border: none;
+    border-bottom: 1px solid #fff;
+    outline: none;
+    background: transparent;
+  }
+  
+  .login-box .user-box label {
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 10px 0;
+    font-size: 16px;
+    color: #fff;
+    pointer-events: none;
+    transition: .5s;
+  }
+  
+  .login-box .user-box input:focus ~ label,
+  .login-box .user-box input:valid ~ label {
+    top: -20px;
+    left: 0;
+    color: #fff;
+    font-size: 12px;
+  }
+  
+  .login-box form a {
+    position: relative;
+    display: inline-block;
+    padding: 10px 20px;
+    font-weight: bold;
+    color: #fff;
+    font-size: 16px;
+    text-decoration: none;
+    text-transform: uppercase;
+    overflow: hidden;
+    transition: .5s;
+    margin-top: 40px;
+    letter-spacing: 3px
+  }
+  
+  .login-box a:hover {
+    background: #fff;
+    color: #272727;
+    border-radius: 5px;
+  }
+  
+  .login-box a span {
+    position: absolute;
+    display: block;
+  }
+  
+  .login-box a span:nth-child(1) {
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(90deg, transparent, #fff);
+    animation: btn-anim1 1.5s linear infinite;
+  }
+  
+  @keyframes btn-anim1 {
+    0% {
+      left: -100%;
+    }
+  
+    50%,100% {
+      left: 100%;
+    }
+  }
+  
+  .login-box a span:nth-child(2) {
+    top: -100%;
+    right: 0;
+    width: 2px;
+    height: 100%;
+    background: linear-gradient(180deg, transparent, #fff);
+    animation: btn-anim2 1.5s linear infinite;
+    animation-delay: .375s
+  }
+  
+  @keyframes btn-anim2 {
+    0% {
+      top: -100%;
+    }
+  
+    50%,100% {
+      top: 100%;
+    }
+  }
+  
+  .login-box a span:nth-child(3) {
+    bottom: 0;
+    right: -100%;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(270deg, transparent, #fff);
+    animation: btn-anim3 1.5s linear infinite;
+    animation-delay: .75s
+  }
+  
+  @keyframes btn-anim3 {
+    0% {
+      right: -100%;
+    }
+  
+    50%,100% {
+      right: 100%;
+    }
+  }
+  
+  .login-box a span:nth-child(4) {
+    bottom: -100%;
+    left: 0;
+    width: 2px;
+    height: 100%;
+    background: linear-gradient(360deg, transparent, #fff);
+    animation: btn-anim4 1.5s linear infinite;
+    animation-delay: 1.125s
+  }
+  
+  @keyframes btn-anim4 {
+    0% {
+      bottom: -100%;
+    }
+  
+    50%,100% {
+      bottom: 100%;
+    }
+  }
+  
+  .login-box p:last-child {
+    color: #aaa;
+    font-size: 14px;
+  }
+  
+  .login-box a.a2 {
+    color: #fff;
+    text-decoration: none;
+  }
+  
+  .login-box a.a2:hover {
+    background: transparent;
+    color: #aaa;
+    border-radius: 5px;
+  }
+   
+  /* PÁGINA DE LOGIN - fim */
+
+  .hero {
+    background-color: #e7e7e7;
+    position: relative;
+    height: 100vh;
+    overflow: hidden;
+    font-family: "Montserrat", sans-serif;
+  }
+
+  html.dark   .hero {
+    background-color: #111111;
+
+  }
+
+  html.dark .cube {
+
+    border: solid 1px #2f2f30;
+
+  }
+  
+  .hero__title {
+    color: #fff;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 50px;
+    z-index: 1;
+  }
+  
+  .cube {
+    position: absolute;
+    top: 80vh;
+    left: 45vw;
+    width: 10px;
+    height: 10px;
+    border: solid 1px #505050;
+    transform-origin: top left;
+    transform: scale(0) rotate(0deg) translate(-50%, -50%);
+    -webkit-animation: cube 12s ease-in forwards infinite;
+            animation: cube 12s ease-in forwards infinite;
+  }
+  .cube:nth-child(2n) {
+    border-color: #000613;
+  }
+
+  html.dark   .cube:nth-child(2n) {
+    border-color: #6d6d6d;
+  }
+  .cube:nth-child(2) {
+    -webkit-animation-delay: 2s;
+            animation-delay: 2s;
+    left: 25vw;
+    top: 40vh;
+  }
+  .cube:nth-child(3) {
+    -webkit-animation-delay: 4s;
+            animation-delay: 4s;
+    left: 75vw;
+    top: 50vh;
+  }
+  .cube:nth-child(4) {
+    -webkit-animation-delay: 6s;
+            animation-delay: 6s;
+    left: 90vw;
+    top: 10vh;
+  }
+  .cube:nth-child(5) {
+    -webkit-animation-delay: 8s;
+            animation-delay: 8s;
+    left: 10vw;
+    top: 85vh;
+  }
+  .cube:nth-child(6) {
+    -webkit-animation-delay: 10s;
+            animation-delay: 10s;
+    left: 50vw;
+    top: 10vh;
+  }
+  
+  @-webkit-keyframes cube {
+    from {
+      transform: scale(0) rotate(0deg) translate(-50%, -50%);
+      opacity: 1;
+    }
+    to {
+      transform: scale(20) rotate(960deg) translate(-50%, -50%);
+      opacity: 0;
+    }
+  }
+  
+  @keyframes cube {
+    from {
+      transform: scale(0) rotate(0deg) translate(-50%, -50%);
+      opacity: 1;
+    }
+    to {
+      transform: scale(20) rotate(960deg) translate(-50%, -50%);
+      opacity: 0;
+    }
+  }
+
+/* MODO DARK - início */
+
+.theme {
+  display: flex;
+  align-items: center;
+  -webkit-tap-highlight-color: transparent;
+}
+
+.theme-container {
+  position: absolute;
+  left: 50px; /* Ajuste a posição conforme necessário */
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.switch {
+  font-size: 17px;
+  position: relative;
+  display: inline-block;
+  width: 64px;
+  height: 34px;
+}
+
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #73C0FC;
+  transition: .4s;
+  border-radius: 30px;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 30px;
+  width: 30px;
+  border-radius: 20px;
+  left: 2px;
+  bottom: 2px;
+  z-index: 2;
+  background-color: #e8e8e8;
+  transition: .4s;
+}
+
+.sun svg {
+  position: absolute;
+  top: 6px;
+  left: 36px;
+  z-index: 1;
+  width: 24px;
+  height: 24px;
+}
+
+.moon svg {
+  fill: #73C0FC;
+  position: absolute;
+  top: 5px;
+  left: 5px;
+  z-index: 1;
+  width: 24px;
+  height: 24px;
+}
+
+/* .switch:hover */.sun svg {
+  animation: rotate 15s linear infinite;
+}
+
+@keyframes rotate {
+ 
+  0% {
+    transform: rotate(0);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+/* .switch:hover */.moon svg {
+  animation: tilt 5s linear infinite;
+}
+
+@keyframes tilt {
+ 
+  0% {
+    transform: rotate(0deg);
+  }
+
+  25% {
+    transform: rotate(-10deg);
+  }
+
+  75% {
+    transform: rotate(10deg);
+  }
+
+  100% {
+    transform: rotate(0deg);
+  }
+}
+
+.input:checked + .slider {
+  background-color: #183153;
+}
+
+.input:focus + .slider {
+  box-shadow: 0 0 1px #183153;
+}
+
+.input:checked + .slider:before {
+  transform: translateX(30px);
+}
+/* MODO DARK - fim */
+
+
+
+/* Footer styles */
+footer {
+  text-align: center;
+  padding: 20px 0;
+  color: #fff;
+    background-color: #151515;
+}
+
+
+.footer-login {
+  text-align: center;
+  padding: 20px 0;
+  color: #fff;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  background-color: #151515;
+}
+
+
+
+/* Media queries for responsiveness */
+@media screen and (max-width: 768px) {
+
+
+    .banner {
+        padding: 50px 20px;
+        flex-direction: column;
+        text-align: center;
+    }
+    
+    .banner-content {
+        margin-top: 30px;
+        margin-bottom: 20px;
+   
+    }
+    
+    .banner-image {
+        text-align: center;
+    }
+
+
+    .logo {
+        margin: 0 auto;
+    }
+
+    nav {
+      height: 7vh;
+      align-items: center;
+      position: fixed;
+    }
+
+    .banner-1 p,
+    .banner-2 p { 
+      font-weight: 500; 
+      text-align: center;
+      font-size: 1.5rem; 
+      width: clamp(270px, 50%, 400px);
+      margin: 0 auto; /* Adicione essa linha para centralizar horizontalmente */
+    }
+
+    .banner-3 p { 
+      font-weight: 500;  
+      font-size: 1.2rem; 
+      width: clamp(400px, 50%, 400px);
+     
+    }
+
+    
+     /* HAMBURGE ICON - início */
+
+.burger {
+  position: relative;
+  width: 30px;
+  height: 25px;
+  background: transparent;
+  cursor: pointer;
+  display: block;
+}
+
+.burger input {
+  display: none;
+}
+
+.burger span {
+  display: block;
+  position: absolute;
+  height: 4px;
+  width: 100%;
+  background: rgb(255, 255, 255);
+  border-radius: 9px;
+  opacity: 1;
+  left: 0;
+  transform: rotate(0deg);
+  transition: .25s ease-in-out;
+}
+
+.burger span:nth-of-type(1) {
+  top: 0px;
+  transform-origin: left center;
+}
+
+.burger span:nth-of-type(2) {
+  top: 50%;
+  transform: translateY(-50%);
+  transform-origin: left center;
+}
+
+.burger span:nth-of-type(3) {
+  top: 100%;
+  transform-origin: left center;
+  transform: translateY(-100%);
+}
+
+.burger.active span:nth-of-type(1) {
+  transform: rotate(45deg);
+  top: 0px;
+  left: 3px;
+}
+
+.burger.active span:nth-of-type(2) {
+  width: 0%;
+  opacity: 0;
+}
+
+.burger.active span:nth-of-type(3) {
+  transform: rotate(-45deg);
+  top: 22px;
+  left: 3px;
+}
+    
+    /* HAMBURGE ICON - fim */
+
+
+     /* SIDEBAR (MENU LATERAL) - inicio ⇩ */
+      
+
+    .menu {
+        flex-direction: column;
+        align-items: center; 
+       
+    }
+
+    .menu li {
+        margin: 20px 0; /* Espaçamento entre os itens */
+    }
+    
+    .menu a {
+        font-size: 20px;
+    }
+  
+    .menu-container {
+      position: fixed;
+      width: 100%;
+      height: 100vh;
+      background-color: #151515;
+      top: 7vh;
+      transform: translateX(-100%);
+      transition: transform 0.5s;
+      z-index: 1;
+  }
+  
+    .menu-container.active {
+        transform: translateX(0); /* Mostra a barra lateral */
+    }
+      
+    .menu-container ul {
+        margin-top: 30%;
+    }
+  
+    ul {
+      display: flex;
+      flex-direction: column;
+      align-items: start;
+      list-style-type: none;
+    }
+      li {
+        padding: 6px 0;
+      }
+        a {
+          position: relative;
+          display: block;
+          padding: 4px 0;
+          font-family: Lato, sans-serif;
+          color: #ecf0f1;
+          text-decoration: none;
+          text-transform: uppercase;
+          transition: 0.5s;
+    
+          &::after {
+            position: absolute;
+            content: "";
+            top: 100%;
+            left: 0;
+            width: 100%;
+            height: 3px;
+            background: #3498db;
+            transform: scaleX(0);
+            transform-origin: right;
+            transition: transform 0.5s;
+          }
+    
+          &:hover {
+            color: #95a5a6;
+          }
+    
+          &:hover::after {
+            transform: scaleX(1);
+            transform-origin: left;
+          }}
+
+     /* SIDEBAR (MENU LATERAL) - fim */
+
+
+
+  
+
+
+  }

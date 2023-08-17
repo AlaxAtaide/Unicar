@@ -1,0 +1,136 @@
+/* Animated bubble by Álax Ataíde @deforceh */
+body{
+    background-color:rgb(31, 31, 31);
+    margin: 0px;
+    padding: 0px;
+    grid-template-areas:
+        "header header"
+        "banner-1 banner-1"
+        "banner-2 banner-2"
+        "banner-3 banner-3"
+        "box box"
+        "footer footer";
+}
+.area {
+    background: #4e54c8;
+    background: -webkit-linear-gradient(to left, #8f94fb, #4e54c8);
+    width: 100%;
+  
+}
+
+
+    
+/* bolhas */
+
+.burble {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    background: #fff;
+    opacity: .3;
+
+    position: absolute;
+    bottom: -200;
+
+    animation: burble 3s linear infinite;
+
+}
+
+
+.burble:nth-child(1) {
+    width: 80px;
+    height: 80px;
+    left: 5%;
+    animation-duration: 1.8s;
+
+}
+
+.burble:nth-child(2) {
+    width: 100px;
+    height: 100px;
+    left: 35%;
+    animation-duration: 3s;
+    
+}
+
+.burble:nth-child(3) {
+    width: 20px;
+    height: 20px;
+    left: 15%;
+    animation-duration: 1.5s;
+   
+}
+
+.burble:nth-child(4) {
+    width: 50px;
+    height: 50px;
+    left: 90%;
+    animation-duration: 6s;
+ 
+}
+
+.burble:nth-child(5) {
+    width: 70px;
+    height: 70px;
+    left: 65%;
+    animation-duration: 3s;
+    
+}
+
+.burble:nth-child(6) {
+    width: 26px;
+    height: 26px;
+    left: 50%;
+    animation-duration: 4s;
+    
+}
+
+.burble:nth-child(7) {
+    width: 20px;
+    height: 20px;
+    left: 50%;
+    animation-duration: 4s;
+
+}
+
+.burble:nth-child(8) {
+    width: 100px;
+    height: 100px;
+    left: 52%;
+    animation-duration: 5s;
+ 
+}
+
+.burble:nth-child(9) {
+    width: 65px;
+    height: 65px;
+    left: 51%;
+    animation-duration: 3s;
+ 
+}
+
+.burble:nth-child(10) {
+    width: 40px;
+    height: 40px;
+    left: 35%;
+    animation-duration: 3s;
+
+}
+
+@keyframes burble {
+    0%{
+        bottom: 0;
+        opacity: 0;
+    }
+    30% {
+        transform: translateX(30px);
+    }
+    50% {
+        opacity: .4;
+
+    }
+    100% {
+        bottom: 100vh;
+        opacity: 0;
+    }
+}
