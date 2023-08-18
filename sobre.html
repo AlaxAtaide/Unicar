@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="icon/icone.png"/>
+    <link rel="shortcut icon" type="image/x-icon" href="img/blue.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" 
+    integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <!-- Boxicons CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" type="text/css" href="src/novo.css">
+    <title>Área do Cliente</title>
+</head>
+<body>
+  
+    <header> 
+        <nav>
+    
+                    <!-- BUTTON DARK MODE  -->
+            <div class="theme-container">
+                <label for="theme" class="theme">
+                    <label class="switch">
+                    <span class="sun"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><g fill="#ffd43b"><circle r="5" cy="12" cx="12"></circle><path d="m21 13h-1a1 1 0 0 1 0-2h1a1 1 0 0 1 0 2zm-17 0h-1a1 1 0 0 1 0-2h1a1 1 0 0 1 0 2zm13.66-5.66a1 1 0 0 1 -.66-.29 1 1 0 0 1 0-1.41l.71-.71a1 1 0 1 1 1.41 1.41l-.71.71a1 1 0 0 1 -.75.29zm-12.02 12.02a1 1 0 0 1 -.71-.29 1 1 0 0 1 0-1.41l.71-.66a1 1 0 0 1 1.41 1.41l-.71.71a1 1 0 0 1 -.7.24zm6.36-14.36a1 1 0 0 1 -1-1v-1a1 1 0 0 1 2 0v1a1 1 0 0 1 -1 1zm0 17a1 1 0 0 1 -1-1v-1a1 1 0 0 1 2 0v1a1 1 0 0 1 -1 1zm-5.66-14.66a1 1 0 0 1 -.7-.29l-.71-.71a1 1 0 0 1 1.41-1.41l.71.71a1 1 0 0 1 0 1.41 1 1 0 0 1 -.71.29zm12.02 12.02a1 1 0 0 1 -.7-.29l-.66-.71a1 1 0 0 1 1.36-1.36l.71.71a1 1 0 0 1 0 1.41 1 1 0 0 1 -.71.24z"></path></g></svg></span>
+                    <span class="moon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512"><path d="m223.5 32c-123.5 0-223.5 100.3-223.5 224s100 224 223.5 224c60.6 0 115.5-24.2 155.8-63.4 5-4.9 6.3-12.5 3.1-18.7s-10.1-9.7-17-8.5c-9.8 1.7-19.8 2.6-30.1 2.6-96.9 0-175.5-78.8-175.5-176 0-65.8 36-123.1 89.3-153.3 6.1-3.5 9.2-10.5 7.7-17.3s-7.3-11.9-14.3-12.5c-6.3-.5-12.6-.8-19-.8z"></path></svg></span>   
+                    <input type="checkbox" class="input">
+                    <span class="slider"></span>
+                </label>
+            </div>
+    
+                <div class="logo">UNICAR</div>
+                <label class="burger" for="burger">
+                  <span></span>
+                  <span></span>
+                  <span></span>
+                </label>
+                  
+                  <div class="menu-container">
+                      <ul class="menu" id="menuItems">
+                        <li><a href="novo.html">INÍCIO</a></li>
+                        <li><a href="#">RESERVA</a></li>
+                        <li><a href="#">EQUIPE</a></li>
+                        <li><a href="sobre.html">SOBRE</a></li>
+                        <li><a href="login.html">Entrar</a></li>
+                        <li><a href="register.html">Cadastre-se</a></li>
+                      </ul>
+                  </div>
+            </nav>
+    </header>
+  
+    <main>
+
+        <div class="hero"> 
+            <div class="hero__title"></div>
+            <div class="cube"></div>
+            <div class="cube"></div>
+            <div class="cube"></div>
+            <div class="cube"></div>
+            <div class="cube"></div>
+            <div class="cube"></div>
+          </div>
+        
+          <form class="plan-chooser">
+            <div class="header">
+              <span class="title">Escolha seu plano:</span>
+              <p class="desc">Opte sempre pelo melhor plano para você! Você merece o melhor.</p>
+            </div>
+            <div class="plan-options">
+              <div class="plan-option">
+                <input value="free" id="free" name="plan" type="radio">
+                <label for="free">
+                  <div class="plan-info">
+                    <span class="plan-cost">$0</span>
+                    <span class="plan-name">Teste grátis</span>
+                    <div class="plan-desc">
+                        <p>Experimente nossos serviços gratuitamente para conhecer todas as funcionalidades incríveis que oferecemos:</p>
+                        <ul class="benefits">
+                            <li>Acesso completo ao sistema de gerenciamento de estacionamento</li>
+                            <li>Cadastro de até 50 veículos</li>
+                            <li>Relatórios básicos de atividades</li>
+                            <li>Suporte por e-mail durante o período de teste</li>
+                            <li>Integração com um gateway de pagamento</li>
+                            <li>Acesso a notificações</li>
+                            <li>Recursos de segurança avançados</li>
+                            <li>Gerenciamento de perfis de usuários</li>
+                            <li>Possibilidade de atualizar para planos premium</li>
+                            <li>Sem compromisso financeiro</li>
+                        </ul>
+                    </div>
+                    
+                  </div>
+                </label>
+              </div>
+              
+              <div class="plan-option">
+                <input value="monthly" id="monthly" name="plan" type="radio">
+                <label for="monthly">
+                  <div class="plan-info">
+                    <span class="plan-cost">$29/month</span>
+                    <span class="plan-name">Plano Mensal</span>
+                    <div class="plan-desc">
+                        <p>Escolha o plano mensal para obter acesso contínuo a todas as nossas funcionalidades premium:</p>
+                        <ul class="benefits">
+                            <li>Acesso completo e ilimitado ao sistema de gerenciamento de estacionamento</li>
+                            <li>Cadastro ilimitado de veículos</li>
+                            <li>Relatórios detalhados de atividades e desempenho</li>
+                            <li>Suporte prioritário por e-mail</li>
+                            <li>Integração com múltiplos gateways de pagamento</li>
+                            <li>Notificações em tempo real</li>
+                            <li>Acesso a recursos exclusivos de análise de dados</li>
+                            <li>Opção de personalização da interface</li>
+                            <li>Suporte técnico rápido</li>
+                            <li>Acesso a webinars exclusivos</li>
+                        </ul>
+                    </div>
+                    
+                  </div>
+                </label>
+              </div>
+              <div class="plan-option">
+                <input value="annual" id="annual" name="plan" type="radio">
+                <label for="annual">
+                  <div class="plan-info">
+                    <span class="plan-cost">$228/month</span>
+                    <span class="plan-name">Plano Anual</span>
+                    <div class="plan-desc">
+                        <p>Economize mais com nosso plano anual e aproveite todas as vantagens premium:</p>
+                         <ul class="benefits">
+                            <li>Todas as vantagens do plano mensal</li>
+                            <li>Desconto de 20% no preço total</li>
+                            <li>Atualizações e melhorias automáticas</li>
+                            <li>Assistência técnica 24/7</li>
+                            <li>Acesso prioritário a novos recursos</li>
+                            <li>Consultoria personalizada para otimização</li>
+                            <li>Opção de treinamento presencial para equipes</li>
+                            <li>Relatórios avançados de análise de dados</li>
+                            <li>Gerenciamento de reservas de espaços</li>
+                            <li>Participação em grupos de discussão exclusivos</li>
+                        </ul>
+                    </div>
+                    
+                  </div>
+                  <!-- <span class="reduction"> Promoção 20% </span> -->
+                </label>
+              </div>
+            </div>
+            <a href="#" title="" class="choose-btn"> Assinar </a>
+          </form>
+          
+          
+          
+  </main>
+  
+      <footer>
+        <p class="footer-login">&copy; 2023 UNICAR. Todos os direitos reservados.</p>
+      </footer>
+  
+      <script src="src/script.js"></script>
+  </body>
+  
+  
+  
+  </html>
+  

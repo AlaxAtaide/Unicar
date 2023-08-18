@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+reset-password<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -9,16 +9,14 @@
     integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
-    <!-- Boxicons CSS -->
-    <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
     <link rel="stylesheet" type="text/css" href="src/novo.css">
     <title>Área do Cliente</title>
 </head>
 <body>
-  
+
     <header> 
         <nav>
-    
+
                     <!-- BUTTON DARK MODE  -->
             <div class="theme-container">
                 <label for="theme" class="theme">
@@ -29,29 +27,29 @@
                     <span class="slider"></span>
                 </label>
             </div>
-    
+
                 <div class="logo">UNICAR</div>
                 <label class="burger" for="burger">
-                  <span></span>
-                  <span></span>
-                  <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
                 </label>
-                  
-                  <div class="menu-container">
-                      <ul class="menu" id="menuItems">
+                
+                <div class="menu-container">
+                    <ul class="menu" id="menuItems">
                         <li><a href="novo.html">INÍCIO</a></li>
                         <li><a href="#">RESERVA</a></li>
                         <li><a href="#">EQUIPE</a></li>
                         <li><a href="sobre.html">SOBRE</a></li>
                         <li><a href="login.html">Entrar</a></li>
                         <li><a href="register.html">Cadastre-se</a></li>
-                      </ul>
-                  </div>
+                    </ul>
+                </div>
             </nav>
     </header>
-  
-    <main>
 
+    <main>
+    
         <div class="hero"> 
             <div class="hero__title"></div>
             <div class="cube"></div>
@@ -60,50 +58,50 @@
             <div class="cube"></div>
             <div class="cube"></div>
             <div class="cube"></div>
-          </div>
+        </div>
 
 
-          <div class="forgot-password">
-            <form>
-              <div class="header">
-                <span class="title">Esqueceu sua senha?</span>
-                <p class="sub-title">Selecione a opção para redefinir a senha</p>
-              </div>
-              <div class="reset-option">
-                <input value="email" id="email" name="option" type="radio" checked="">
-                <label for="email">
-                  <div class="reset-info">
-                    <span class="reset-title">Redefinir por e-mail</span>
-                    <span class="reset-sub-title">O link de redefinição será enviado para o seu endereço de e-mail registrado</span>
-                  </div>
-                </label>
-              </div>
-              <div class="reset-option">
-                <input value="sms" id="sms" name="option" type="radio">
-                <label for="sms">
-                   <div class="reset-info">
-                    <span class="reset-title">Redefinir por SMS</span>
-                    <span class="reset-sub-title">O link de redefinição será enviado para o seu número registrado</span>
-                  </div>
-                </label>
-              </div>
-                <a href="#" title="" class="send-btn" id="send-button">Enviar</a>
-                <p><a href="login.html" class="resend">voltar</p>
-            </form>
-          </div>
-  </main>
+     
+            <form class="form">
+                <span class="close">X</span>
+              
+                <div class="info">
+                    <i class='bx bxs-check-shield bx-md'></i>
+                <span class="title">Código de Verificação</span>
+              <p class="description">Digite o código de autenticação enviado ao seu E-mail</p>
+                 </div>
+                  <div class="input-fields">
+                    <input maxlength="1" type="tel" placeholder="" id="input1">
+                    <input maxlength="1" type="tel" placeholder="" id="input2">
+                    <input maxlength="1" type="tel" placeholder="" id="input3">
+                    <input maxlength="1" type="tel" placeholder="" id="input4">
+                </div>
+              
+                    <div class="action-btns">
+                      <a href="#" class="verify">Confirmar</a>
+                      <button type="reset" class="clear">Clear</button>
+                    </div>
+              
+              </form>
+  
   
 
- 
-  
+        
+        
+        
+    </main>
+    
       <footer>
         <p class="footer-login">&copy; 2023 UNICAR. Todos os direitos reservados.</p>
       </footer>
   
       <script src="src/script.js"></script>
   </body>
-  
-  
-  
-  </html>
-  
+
+
+</html>
+
+
+
+
+
