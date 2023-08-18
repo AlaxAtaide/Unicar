@@ -30,3 +30,26 @@ window.addEventListener('load', () => {
 
 
 // Efeito Modo Noturno (DARK MODE) - fim //
+
+
+// SIMBOLO EYE CLOCK / EYE SHOW (SENHA DO USUÁRIO) - início
+
+const pwShowHide = document.querySelectorAll(".eye-icon");
+
+pwShowHide.forEach(eyeIcon => {
+  eyeIcon.addEventListener("click", () => {
+    let pwField = eyeIcon.previousElementSibling; // Select the password input field
+    
+    if (pwField.type === "password") {
+      pwField.type = "text";
+      eyeIcon.classList.toggle("bx-hide");
+      eyeIcon.classList.toggle("bx-show");
+    } else {
+      pwField.type = "password";
+      eyeIcon.classList.toggle("bx-show");
+      eyeIcon.classList.toggle("bx-hide");
+    }
+  });
+});
+
+// SIMBOLO EYE CLOCK / EYE SHOW (SENHA DO USUÁRIO) - fim

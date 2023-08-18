@@ -142,7 +142,21 @@ html.dark .banner-3 {
   width: clamp(1050px, 50%, 100px);
  
 }
+  /* ICONE DE OLHO SENHA - início */
 
+  .eye-icon{
+    position: absolute;
+    top: 10%;
+    right: 10px;
+    transform: translateY(-10%);
+    font-size: 18px;
+    color: #8b8b8b;
+    cursor: pointer;
+    padding: 5px;
+}
+
+
+  /* ICONE DE OLHO SENHA - fim */
 
    /* PÁGINA DE LOGIN - início */
   html.dark body {
@@ -161,6 +175,7 @@ html.dark .banner-3 {
     width: 400px;
     padding: 40px;
     margin: 20px auto;
+    color: #fff;
     transform: translate(-50%, -55%);
     background: rgba(0,0,0,.9);
     box-sizing: border-box;
@@ -168,7 +183,23 @@ html.dark .banner-3 {
     border-radius: 10px;
     
   }
+
+  .login-box a.forgotten {
+    margin: 0 0 0px;
+    font-weight: 400;
+    right: 6%;
+    color: #fff;
+    font-size: 0.7rem;
+    text-decoration: none;
+  }
   
+  .login-box a.forgotten:hover {
+    background: transparent;
+    color: #aaa;
+
+  }
+   
+
   .login-box p:first-child {
     margin: 0 0 30px;
     padding: 0;
@@ -438,6 +469,113 @@ html.dark .banner-3 {
     }
   }
 
+
+  /* reset senha - início */
+
+  .forgot-password {
+      background: rgba(0,0,0,.9);
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      width: 400px;
+      padding: 40px;
+      margin: 20px auto;
+      color: #fff;
+      transform: translate(-50%, -55%);
+      box-sizing: border-box;
+      box-shadow: 0 15px 25px rgba(0,0,0,.6);
+      border-radius: 10px;
+    }
+    
+  .header {
+    text-align: center;
+    margin-top: 0.75rem;
+  }
+  
+  .forgot-password .title {
+    font-size: 1.775rem;
+    font-weight: 700;
+    line-height: 1.25rem;
+    color: #fff;
+  }
+  
+  .forgot-password .sub-title {
+    margin-top: 0.4rem;
+    font-size: 1rem;
+    line-height: 1.5rem;
+  }
+  
+  .reset-option {
+    margin-top: 1rem;
+    margin-bottom: 15px;
+  }
+  
+  .reset-option label {
+    cursor: pointer;
+    overflow: hidden;
+    border: 2px solid rgba(229, 231, 235, 1);
+    border-radius: 0.375rem;
+    background-color: #F7F7F7;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem .4rem;
+    margin: 10px 0;
+    transform: all .15s ease;
+  }
+  
+  .reset-option label .reset-info {
+    display: flex;
+    flex-direction: column;
+    margin-left: 10px;
+  }
+  
+  .reset-title {
+    font-size: 1.25rem;
+    line-height: 1.75rem;
+    font-weight: 600;
+    color: rgba(0, 0, 0, 1);
+  }
+  
+  .reset-sub-title {
+    font-size: 0.875rem;
+    color: rgba(0, 0, 0, 1);
+    line-height: 1.25rem;
+  }
+  
+  .reset-option input:checked + label {
+    border-color: #0069e0;
+  }
+  
+  .send-btn {
+    text-decoration: none;
+    width: 100%;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 0.375rem;
+    background-color: #0069e0;
+    padding: 1rem 3rem;
+    font-weight: 600;
+    color: #000;
+    transform: all .15s ease;
+  }
+  
+  .send-btn:hover {
+    opacity: .9;
+  }
+  
+  .reset-option input {
+    display: none;
+  }
+  
+  .resend {
+    color: #fff;
+    font-weight: 600;
+  }
+
+  /* reset senha - fim */
+
 /* MODO DARK - início */
 
 .theme {
@@ -569,17 +707,13 @@ footer {
   text-align: center;
   padding: 20px 0;
   color: #fff;
-    background-color: #151515;
+  background-color: #151515;
 }
 
 
 .footer-login {
   text-align: center;
-  padding: 20px 0;
   color: #fff;
-  position: absolute;
-  bottom: 0;
-  width: 100%;
   background-color: #151515;
 }
 
