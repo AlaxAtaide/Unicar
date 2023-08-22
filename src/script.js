@@ -53,3 +53,46 @@ pwShowHide.forEach(eyeIcon => {
 });
 
 // SIMBOLO EYE CLOCK / EYE SHOW (SENHA DO USUÁRIO) - fim
+
+
+document.addEventListener("DOMContentLoaded", function() {
+  // Captura o botão de envio pelo seu ID
+  var sendButton = document.getElementById("send-button");
+  
+  // Adiciona um ouvinte de evento para o clique no botão de envio
+  sendButton.addEventListener("click", function(event) {
+    event.preventDefault(); // Previne o comportamento padrão do link
+    
+    // Captura o valor da opção selecionada
+    var selectedOption = document.querySelector('input[name="option"]:checked').value;
+    
+    // Redireciona o usuário com base na opção selecionada
+    if (selectedOption === "email") {
+      window.location.href = "mail.html"; // Redireciona para mail.html
+    } else if (selectedOption === "sms") {
+      window.location.href = "sms.html"; // Redireciona para tel.html
+    }
+  });
+});
+
+document.addEventListener("DOMContentLoaded", function() {
+  var inputs = document.querySelectorAll(".input-fields input"); // Seleciona todos os campos de entrada
+  for (var i = 0; i < inputs.length; i++) {
+    inputs[i].addEventListener("input", function() {
+      this.value = this.value.replace(/\D/g, ''); // Remove caracteres não numéricos
+      if (this.value.length === this.maxLength) {
+        // Se o campo atingir o comprimento máximo, encontra o próximo campo
+        var nextInput = this.nextElementSibling;
+        if (nextInput !== null) {
+          nextInput.focus(); // Move o foco para o próximo campo
+        }
+      } else if (this.value.length === 0) {
+        // Se o campo estiver vazio, encontra o campo anterior
+        var previousInput = this.previousElementSibling;
+        if (previousInput !== null) {
+          previousInput.focus(); // Move o foco para o campo anterior
+        }
+      }
+    });
+  }
+});
